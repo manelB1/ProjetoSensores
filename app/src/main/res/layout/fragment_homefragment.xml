@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#673AB7">
+
+        <Button
+            android:id="@+id/buttonLuz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:text="Luz"
+            android:textColor="#090909"
+            app:backgroundTint="#FFFDFD"
+            app:layout_constraintEnd_toEndOf="@+id/buttonGisroscopio"
+            app:layout_constraintStart_toEndOf="@+id/buttonAcelerometro"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGisroscopio" />
+
+        <Button
+            android:id="@+id/buttonProximidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Proximidade"
+            android:textColor="#0B0B0B"
+            app:backgroundTint="#FFFBFB"
+            app:layout_constraintBottom_toTopOf="@+id/buttonAcelerometro"
+            app:layout_constraintEnd_toStartOf="@+id/buttonGisroscopio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/buttonAcelerometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Acelerometro"
+            android:textColor="#0B0B0B"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/buttonProximidade"
+            app:layout_constraintTop_toBottomOf="@+id/buttonProximidade" />
+
+        <Button
+            android:id="@+id/buttonGisroscopio"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="8dp"
+            android:text="Giroscopio"
+            android:textColor="#050505"
+            app:backgroundTint="#FFFCFC"
+            app:layout_constraintBottom_toTopOf="@+id/buttonLuz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonProximidade"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="176dp"
+            android:text="Sensores"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
